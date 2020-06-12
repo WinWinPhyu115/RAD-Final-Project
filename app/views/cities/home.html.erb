@@ -1,0 +1,28 @@
+
+<div class="center jumbotron">
+  <h1>Clock+</h1>
+
+  <h2>
+   Clock+ built by Win Win Phyu - s3733075 - attempt pass level - Wednesday 6:30pm Group
+  </h2>
+   <div class = "Mode">
+   <ul>
+   <li><%=image_tag("greendot.png", alt: "green dot") %>Business Time</li>
+   <li><%=image_tag("orangedot.png", alt: "orange dot") %>Business OverTime</li>
+   <li><%=image_tag("reddot.png", alt: "red dot") %>Person Time</li>
+   <li><%=image_tag("sleep.png", alt: "sleep dot") %>Sleeping Time</li>
+   </ul>
+   </div>
+  
+  <div class = "ListCity">
+   <% @cities.each do |city|  %>
+   <ul>
+   <li><%= city.name %></li>
+   <li><%= I18n.l(Time.now.in_time_zone(city.offset)) %></li>
+   <% if city.offset != 10 %>
+   <li><%= (city.offset - 10) %>hrs</li>
+   <% end %>
+   </ul>
+   <% end %> 
+   </div>
+</div>

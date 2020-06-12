@@ -1,0 +1,26 @@
+// Place all the styles related to the Cities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ListCity ul{
+    list-style: none;
+    font-size: medium;
+}
+
+
+.Mode ul{
+    list-style: none;
+
+}
+.Mode{
+    margin:150px;
+    border:10px;
+    border-color:grey;
+    max-width:500px;
+    max-height:auto;
+    position:absolute;
+    left:120px; // The Side panel must be on the right side of the page.
+    overflow:hidden;
+    text-align: left;
+}
+
