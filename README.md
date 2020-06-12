@@ -12,7 +12,3 @@
   | logs_image/heroku_logs_terminal          | Heroku deployment logs      |      
 
   
-
-
-
-* ...
